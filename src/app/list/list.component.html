@@ -1,0 +1,8 @@
+<h1>My Data</h1>
+<ul *ngIf="myData">
+    <li *ngFor="let data of myData">
+        <p class="name">{{data.name}}</p>
+        <p class="country">{{data.country}}</p>
+        <a class="site" href="{{data.website_url}}">site</a>
+    </li>
+</ul>
